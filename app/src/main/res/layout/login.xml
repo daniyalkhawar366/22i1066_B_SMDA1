@@ -9,46 +9,20 @@
     android:background="#FFFFFF"
     tools:context=".LoginActivity">
 
-    <!-- Time Bar -->
-
-    <!-- Levels Icon (Top Right) -->
-
-    <!-- Socially Title -->
-
-    <ImageView
-        android:id="@+id/bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/Time"
-        android:background="#"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="#000000" />
-
-    <ImageView
-        android:id="@+id/levels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-8dp"
-        android:src="@drawable/Levels"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="#000000" />
-
+    <!-- Back Arrow -->
     <ImageView
         android:id="@+id/backArrow"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:contentDescription="Back"
         android:scaleX="-1"
-        app:tint="#000000"
         android:src="@drawable/Next"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="60dp" />
+        android:tint="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
 
+    <!-- Socially Title -->
     <TextView
         android:id="@+id/tvSociallyTitle"
         android:layout_width="wrap_content"
@@ -60,7 +34,7 @@
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bar" />
+        app:layout_constraintTop_toBottomOf="@id/backArrow" />
 
     <!-- Username Input Field -->
     <EditText
@@ -176,31 +150,18 @@
             android:textSize="14sp" />
     </LinearLayout>
 
-    <!-- Home Indicator -->
-
+    <!-- Footer -->
     <TextView
         android:id="@+id/footer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="612dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-light"
         android:text="Socially"
         android:textColor="#8B5A5A"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/bar" />
-
-    <ImageView
-        android:id="@+id/indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:src="@drawable/HomeIndicator"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="#8B5A5A" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
