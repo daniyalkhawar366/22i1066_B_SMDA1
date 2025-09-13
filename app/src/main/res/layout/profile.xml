@@ -219,7 +219,7 @@
                         <ImageView
                             android:layout_width="56dp"
                             android:layout_height="56dp"
-                            android:src="@drawable/Plus"
+                            android:src="@drawable/plus"
                             android:background="@drawable/circle_border"
                             android:tint="#8B5A5A"
                             android:padding="12dp"
@@ -432,14 +432,14 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Icon"
+            android:src="@drawable/icon"
             android:tint="#000000"
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Shape"
+            android:src="@drawable/shape"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
@@ -453,7 +453,7 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Like"
+            android:src="@drawable/like"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 

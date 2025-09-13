@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:src="@drawable/Time"
+        android:src="@drawable/time"
         android:tint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-20dp"
         android:layout_marginEnd="-28dp"
-        android:src="@drawable/Levels"
+        android:src="@drawable/levels"
         android:tint="#000000"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -51,7 +51,7 @@
             android:id="@+id/backArrow"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/Next"
+            android:src="@drawable/next"
             android:scaleX="-1"
             android:tint="#8B5A5A"
             android:contentDescription="Back" />
@@ -71,7 +71,7 @@
             android:id="@+id/addIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/Plus"
+            android:src="@drawable/plus"
             android:tint="#8B5A5A" />
     </LinearLayout>
 
@@ -129,7 +129,7 @@
             <ImageView
                 android:layout_width="58dp"
                 android:layout_height="58dp"
-                android:src="@drawable/Sam"
+                android:src="@drawable/sam"
                 android:scaleType="centerCrop"
                 android:background="@drawable/circle_mask"
                 android:clipToOutline="true" />
@@ -241,7 +241,7 @@
             <ImageView
                 android:layout_width="58dp"
                 android:layout_height="58dp"
-                android:src="@drawable/Ibbi"
+                android:src="@drawable/ibbi"
                 android:scaleType="centerCrop"
                 android:background="@drawable/circle_mask"
                 android:clipToOutline="true" />
@@ -296,7 +296,7 @@
             <ImageView
                 android:layout_width="58dp"
                 android:layout_height="58dp"
-                android:src="@drawable/JD"
+                android:src="@drawable/jd"
                 android:scaleType="centerCrop"
                 android:background="@drawable/circle_mask"
                 android:clipToOutline="true" />
@@ -490,7 +490,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-2dp"
-        android:src="@drawable/HomeIndicator"
+        android:src="@drawable/homeindicator"
         android:tint="#8B5A5A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -158,7 +158,7 @@
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/Like"
+            android:src="@drawable/like"
             android:tint="#FFFFFF"
             android:layout_marginStart="16dp" />
 

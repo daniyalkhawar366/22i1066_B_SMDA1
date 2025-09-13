@@ -253,7 +253,7 @@
                     android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/Ibbi"
+                    android:src="@drawable/ibbi"
                     android:background="@drawable/circle_white_bg"
                     android:clipToOutline="true"
                     android:outlineProvider="background" />
@@ -288,7 +288,7 @@
         <ImageView
             android:layout_width="42dp"
             android:layout_height="42dp"
-            android:src="@drawable/Ibbi"
+            android:src="@drawable/ibbi"
             android:background="@drawable/circle_mask"
             android:scaleType="centerCrop"
             android:clipToOutline="true"/>
@@ -380,7 +380,7 @@
         <ImageView
             android:layout_width="26dp"
             android:layout_height="26dp"
-            android:src="@drawable/Like"
+            android:src="@drawable/like"
             android:tint="#262626" />
 
         <!-- Chat icon -->
@@ -515,14 +515,14 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Home2"
+            android:src="@drawable/home2"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Shape"
+            android:src="@drawable/shape"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
@@ -536,7 +536,7 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Like"
+            android:src="@drawable/like"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 

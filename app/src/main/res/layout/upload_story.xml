@@ -47,7 +47,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Cross"
+            android:src="@drawable/cross"
             android:padding="8dp"
             android:layout_marginEnd="16dp"/>
 
@@ -61,7 +61,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Partnership"
+            android:src="@drawable/partnership"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"
             android:layout_marginEnd="-12dp"/>
@@ -70,7 +70,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Text"
+            android:src="@drawable/text"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"
             android:layout_marginEnd="-12dp"/>
@@ -79,7 +79,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Stickers2"
+            android:src="@drawable/stickers2"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"
             android:layout_marginEnd="-12dp"/>
@@ -88,7 +88,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Music"
+            android:src="@drawable/music"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"
             android:layout_marginEnd="-12dp"/>
@@ -97,7 +97,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Filters"
+            android:src="@drawable/filters"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"
             android:layout_marginEnd="-12dp"/>
@@ -106,7 +106,7 @@
         <ImageView
             android:layout_width="52dp"
             android:layout_height="52dp"
-            android:src="@drawable/Options"
+            android:src="@drawable/options"
             android:padding="8dp"
             android:backgroundTint="#8B5A5A"/>
 

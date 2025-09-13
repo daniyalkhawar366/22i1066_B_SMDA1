@@ -16,7 +16,7 @@
         android:layout_height="24dp"
         android:contentDescription="Back"
         android:scaleX="-1"
-        android:src="@drawable/Next"
+        android:src="@drawable/next"
         android:tint="#000000"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"

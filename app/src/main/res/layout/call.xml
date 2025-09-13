@@ -25,7 +25,7 @@
             android:id="@+id/profileImage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/Ibbi"
+            android:src="@drawable/ibbi"
             android:scaleType="centerCrop" />
 
     </androidx.cardview.widget.CardView>

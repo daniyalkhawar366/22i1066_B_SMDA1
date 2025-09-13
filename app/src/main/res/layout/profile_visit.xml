@@ -79,7 +79,7 @@
                     android:id="@+id/profile_image"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/JD"
+                    android:src="@drawable/jd"
                     android:layout_marginEnd="20dp"
                     android:background="@drawable/circle_border"
                     android:clipToOutline="true" />
@@ -431,7 +431,7 @@
                     android:layout_width="0dp"
                     android:layout_height="24dp"
                     android:layout_weight="2"
-                    android:src="@drawable/Grid2"
+                    android:src="@drawable/grid2"
                     android:scaleType="centerInside"
                     android:tint="#8B5A5A"
                     android:gravity="center" />
@@ -537,14 +537,14 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Icon"
+            android:src="@drawable/icon"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Shape"
+            android:src="@drawable/shape"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
@@ -558,7 +558,7 @@
         <ImageView
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:src="@drawable/Like"
+            android:src="@drawable/like"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
