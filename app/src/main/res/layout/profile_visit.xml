@@ -325,16 +325,16 @@
                         <ImageView
                             android:layout_width="56dp"
                             android:layout_height="56dp"
-                            android:src="@drawable/Plus"
+                            android:src="@drawable/mountains"
                             android:background="@drawable/circle_border"
-                            android:tint="#8B5A5A"
-                            android:padding="12dp"
-                            android:scaleType="centerInside" />
+                            android:clipToOutline="true"
+                            android:scaleType="centerCrop"
+                            android:elevation="4dp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="New"
+                            android:text="Hunza 2025"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp"/>
                     </LinearLayout>
@@ -350,7 +350,7 @@
                         <ImageView
                             android:layout_width="56dp"
                             android:layout_height="56dp"
-                            android:src="@drawable/friends"
+                            android:src="@drawable/uni"
                             android:background="@drawable/circle_clip"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
@@ -359,7 +359,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Friends"
+                            android:text="Uni"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
                     </LinearLayout>
@@ -384,7 +384,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sports"
+                            android:text="Football"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
                     </LinearLayout>
@@ -400,7 +400,7 @@
                         <ImageView
                             android:layout_width="56dp"
                             android:layout_height="56dp"
-                            android:src="@drawable/design"
+                            android:src="@drawable/cars"
                             android:background="@drawable/circle_clip"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
@@ -409,10 +409,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Design"
+                            android:text="My collection"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
                     </LinearLayout>
+
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -430,7 +431,7 @@
                     android:layout_width="0dp"
                     android:layout_height="24dp"
                     android:layout_weight="2"
-                    android:src="@drawable/grid"
+                    android:src="@drawable/Grid2"
                     android:scaleType="centerInside"
                     android:tint="#8B5A5A"
                     android:gravity="center" />
@@ -455,6 +456,36 @@
                 android:padding="4dp">
 
                 <!-- Row 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginBottom="2dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/wedding2"
+                        android:layout_marginEnd="1dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/wedding3"
+                        android:layout_marginEnd="1dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mansion" />
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
