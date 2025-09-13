@@ -155,7 +155,7 @@
             android:id="@+id/cameraIcon"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:src="@drawable/Camera"
+            android:src="@drawable/camera"
             android:tint="#8B5A5A"
             android:layout_marginEnd="8dp"/>
 

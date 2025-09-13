@@ -151,7 +151,7 @@
             android:paddingHorizontal="16dp"
             android:imeOptions="actionSend"
             android:maxLines="1"
-            android:drawableStart="@drawable/Camera"
+            android:drawableStart="@drawable/camera"
             android:drawablePadding="12dp"/>
 
         <!-- Like Button -->
