@@ -333,7 +333,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-2dp"
-        android:src="@drawable/homeIndicator"
+        android:src="@drawable/homeindicator"
         android:tint="#8B5A5A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
