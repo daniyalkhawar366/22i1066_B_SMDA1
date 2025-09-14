@@ -34,12 +34,16 @@
                 android:weightSum="3">
 
                 <TextView
+                    android:id="@+id/closebtn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Cancel"
                     android:textColor="#8B5A5A"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="8dp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -52,6 +56,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/nextbtn"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -59,11 +64,15 @@
                     android:text="Done"
                     android:textColor="#8B5A5A"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <!-- Profile image -->
             <ImageView
+                android:id="@+id/profile_image_edit"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
@@ -71,16 +80,22 @@
                 android:background="@drawable/circle_mask"
                 android:clipToOutline="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/profile_pic" />
+                android:src="@drawable/profile_pic"
+                android:clickable="true"
+                android:focusable="true" />
 
             <TextView
+                android:id="@+id/change_photo_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:text="Change Profile Photo"
                 android:textColor="#8B5A5A"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp" />
 
             <View
                 android:layout_width="match_parent"
@@ -88,29 +103,35 @@
                 android:background="#DDDDDD"
                 android:layout_marginTop="8dp"/>
 
-            <!-- Info rows -->
+            <!-- Info rows with EditText fields -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Name"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:text="Daniyal Khawar"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <View
@@ -124,23 +145,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Username"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_username"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:text="_dnyl."
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <View
@@ -154,23 +181,30 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Website"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_website"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Website"
-                    android:textColor="#CCCCCC"
-                    android:textSize="16sp" />
+                    android:layout_weight="1.4"
+                    android:hint="Website"
+                    android:textColorHint="#CCCCCC"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textUri"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <View
@@ -184,23 +218,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="top">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Bio"
                     android:textColor="#888888"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_bio"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:text="AI engineer @OpenAI."
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp"
+                    android:minLines="1"
+                    android:maxLines="3"
+                    android:scrollbars="vertical" />
             </LinearLayout>
 
             <View
@@ -211,12 +255,16 @@
 
             <!-- Switch account -->
             <TextView
+                android:id="@+id/switch_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="Switch to Professional Account"
                 android:textColor="#8B5A5A"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp" />
 
             <!-- Private Info -->
             <TextView
@@ -233,23 +281,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Email"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_email"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:text="daniyalkhawar3@gmail.com"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <View
@@ -263,23 +317,29 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Phone"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <EditText
+                    android:id="@+id/edit_phone"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.4"
                     android:text="+1 202 555 0147"
                     android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:selectAllOnFocus="true"
+                    android:padding="8dp" />
             </LinearLayout>
 
             <View
@@ -293,23 +353,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="2"
+                android:gravity="center_vertical">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.6"
                     android:text="Gender"
                     android:textColor="#888888"
                     android:textSize="14sp" />
 
-                <TextView
+                <Spinner
+                    android:id="@+id/edit_gender"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Male"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:layout_weight="1.4"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent" />
             </LinearLayout>
 
             <View
@@ -317,6 +378,7 @@
                 android:layout_height="1dp"
                 android:background="#DDDDDD"
                 android:layout_marginTop="4dp"/>
+
         </LinearLayout>
 
     </ScrollView>
