@@ -101,6 +101,41 @@
             android:exported="false"
             android:label="View Ammans Story"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".SearchBarActivity"
+            android:exported="false"
+            android:label="Search Bar"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".samChatActivity"
+            android:exported="false"
+            android:label="Samee's Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ammanChatActivity"
+            android:exported="false"
+            android:label="Ammans Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiChatActivity"
+            android:exported="false"
+            android:label="Ibrahim's Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".jdChatActivity"
+            android:exported="false"
+            android:label="Umar's Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".rafayChatActivity"
+            android:exported="false"
+            android:label="Rafay's Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".bilalChatActivity"
+            android:exported="false"
+            android:label="Bilal's Chat"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 
 

@@ -9,29 +9,6 @@
     android:background="#FFFFFF"
     tools:context=".personalChatActivity">
 
-    <!-- Your existing components -->
-    <ImageView
-        android:id="@+id/bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/time"
-        android:tint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/levels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="-28dp"
-        android:src="@drawable/levels"
-        android:tint="#000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
         android:id="@+id/indicator"
@@ -39,34 +16,36 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="-2dp"
         android:src="@drawable/homeindicator"
-        android:tint="#8B5A5A"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Header -->
 
     <!-- Header -->
     <ImageView
         android:id="@+id/backButton"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:clickable="true"
         android:focusable="true"
         android:scaleX="-1"
         android:src="@drawable/next"
         android:tint="#8B5A5A"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/profileImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/sam"
-        android:scaleType="centerCrop"
+        android:layout_marginStart="12dp"
         android:background="@drawable/circle_mask"
         android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/amman"
         app:layout_constraintStart_toEndOf="@id/backButton"
         app:layout_constraintTop_toTopOf="@id/backButton"
         app:layout_constraintBottom_toBottomOf="@id/backButton" />
@@ -76,20 +55,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:text="Samee"
+        android:text="Amman"
         android:textColor="#000000"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/profileImage"
-        app:layout_constraintEnd_toStartOf="@id/videoCallButton"
         app:layout_constraintTop_toTopOf="@id/profileImage"
-        app:layout_constraintBottom_toBottomOf="@id/profileImage" />
+        app:layout_constraintBottom_toBottomOf="@id/profileImage"
+        app:layout_constraintEnd_toStartOf="@id/videoCallButton" />
 
     <ImageView
         android:id="@+id/videoCallButton"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:src="@drawable/video"
         android:tint="#000000"
         app:layout_constraintEnd_toStartOf="@id/infoButton"
@@ -106,26 +85,28 @@
         app:layout_constraintTop_toTopOf="@id/profileImage"
         app:layout_constraintBottom_toBottomOf="@id/profileImage" />
 
+
     <!-- New Chat Content -->
 
     <!-- Time text -->
 
     <!-- Chat bubble -->
+    <!-- Time text -->
     <TextView
         android:id="@+id/chatTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="364dp"
-        android:text="4:49 PM"
+        android:layout_marginTop="224dp"
+        android:text="11:49 AM"
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profileImage" />
 
+    <!-- Your first message -->
     <TextView
-        android:id="@+id/chatBubble"
+        android:id="@+id/chatBubble1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="12dp"
@@ -133,9 +114,53 @@
         android:textSize="14sp"
         android:textColor="#FFFFFF"
         android:background="@drawable/chat_bubble_bg"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/chatTime"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- His reply -->
+    <TextView
+        android:id="@+id/chatBubble2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="G Dani bhai"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@drawable/chat_bubble_received_bg"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/chatBubble1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Your next message -->
+    <TextView
+        android:id="@+id/chatBubble3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Amman bhai internship nai lagi yaar :( "
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/chat_bubble_bg"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/chatBubble2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- His last message -->
+    <TextView
+        android:id="@+id/chatBubble4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Dani bhai aapko referral dedun Systems mei?"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:background="@drawable/chat_bubble_received_bg"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/chatBubble3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
     <!-- Bottom message input bar -->
     <LinearLayout

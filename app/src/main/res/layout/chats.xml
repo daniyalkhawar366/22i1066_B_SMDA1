@@ -9,31 +9,6 @@
     android:background="#FFFFFF"
     tools:context=".ChatActivity">
 
-    <!-- Time Bar -->
-
-    <!-- Signal Levels -->
-    <ImageView
-        android:id="@+id/bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/time"
-        android:tint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/levels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="-28dp"
-        android:src="@drawable/levels"
-        android:tint="#000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
     <!-- Top Navigation Bar -->
     <LinearLayout
@@ -119,6 +94,7 @@
 
         <!-- Chat Item -->
         <LinearLayout
+            android:id="@+id/samchat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -153,7 +129,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Oye kab aayega uni?"
+                    android:text="mei cafe betha hun faculty ke saath"
                     android:textColor="#555555"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -175,6 +151,7 @@
                 android:tint="#8B5A5A" />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ammanchat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -231,6 +208,7 @@
                 android:tint="#8B5A5A" />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/ibbichat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -285,7 +263,9 @@
                 android:layout_height="24dp"
                 android:src="@drawable/camera"
                 android:tint="#8B5A5A" />
-        </LinearLayout><LinearLayout
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/jdchat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -342,6 +322,7 @@
                 android:tint="#8B5A5A" />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/rafaychat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -376,7 +357,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Assignment to yes krwao boss :)"
+                    android:text="tou yes krwao boss phir :)"
                     android:textColor="#555555"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -398,6 +379,7 @@
                 android:tint="#8B5A5A" />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/bilalchat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -432,7 +414,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Good job bro. Proud of you."
+                    android:text="Allah ka karam"
                     android:textColor="#555555"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -491,7 +473,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="-2dp"
         android:src="@drawable/homeindicator"
-        android:tint="#8B5A5A"
+        android:tint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
