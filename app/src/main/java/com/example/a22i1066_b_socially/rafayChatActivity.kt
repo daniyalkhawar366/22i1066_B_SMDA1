@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class rafayChatActivity : AppCompatActivity() {
     private lateinit var homebutton: ImageView
+    private lateinit var videobutton: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.rafaychat)
@@ -16,6 +17,11 @@ class rafayChatActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
+        videobutton = findViewById(R.id.videoCallButton)
+        videobutton.setOnClickListener {
+            val intent = Intent(this, rafayCallActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

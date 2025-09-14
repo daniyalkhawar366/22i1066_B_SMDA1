@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class jdChatActivity : AppCompatActivity() {
     private lateinit var homebutton: ImageView
+    private lateinit var videobutton: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.jdchat)
@@ -16,6 +17,13 @@ class jdChatActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        videobutton = findViewById(R.id.videoCallButton)
+        videobutton.setOnClickListener {
+            val intent = Intent(this, jdCallActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
     }
 }

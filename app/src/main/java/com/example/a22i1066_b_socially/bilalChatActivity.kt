@@ -7,12 +7,19 @@ import androidx.appcompat.app.AppCompatActivity
 
 class bilalChatActivity : AppCompatActivity() {
     private lateinit var homebutton: ImageView
+    private lateinit var videobutton: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bilalchat)
         homebutton = findViewById(R.id.backButton)
         homebutton.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        videobutton = findViewById(R.id.videoCallButton)
+        videobutton.setOnClickListener {
+            val intent = Intent(this, bilalCallActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ammanChatActivity : AppCompatActivity() {
     private lateinit var homebutton: ImageView
+    private lateinit var videobutton: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ammanchat)
@@ -16,6 +17,11 @@ class ammanChatActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
+        videobutton = findViewById(R.id.videoCallButton)
+        videobutton.setOnClickListener {
+            val intent = Intent(this, ammanCallActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

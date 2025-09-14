@@ -136,6 +136,43 @@
             android:exported="false"
             android:label="Bilal's Chat"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:label="Edit Profile"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".jdCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".samCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ammanCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".rafayCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".bilalCallActivity"
+            android:exported="false"
+            android:label="Calling Ibrahim"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+
 
 
 
