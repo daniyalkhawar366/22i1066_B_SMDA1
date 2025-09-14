@@ -4,12 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var ivBackArrow: ImageView
     private lateinit var btnLogin: Button
+    private lateinit var etUsername: EditText
+    private lateinit var etPassword: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
@@ -20,20 +24,38 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
+
         ivBackArrow.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Close SignupActivity
+            finish()
         }
-        // Initialize the login button (assume ID is btnLogin in login.xml)
-        btnLogin = findViewById<Button>(R.id.btnLogin)
+
+        // Initialize input fields
+        etUsername = findViewById(R.id.etUsername)     // Make sure IDs match your login.xml
+        etPassword = findViewById(R.id.etPassword)
+
+        // Initialize the login button
+        btnLogin = findViewById(R.id.btnLogin)
 
         btnLogin.setOnClickListener {
+            val email = etUsername.text.toString().trim()
+            val password = etPassword.text.toString().trim()
+
+            if (email.isEmpty()) {
+                etUsername.error = "Email required"
+                return@setOnClickListener
+            }
+
+            if (password.isEmpty()) {
+                etPassword.error = "Password required"
+                return@setOnClickListener
+            }
+
             val intent = Intent(this, FYPActivity::class.java)
             startActivity(intent)
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
             finish()
         }
-
     }
 }

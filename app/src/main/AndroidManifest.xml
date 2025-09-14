@@ -72,6 +72,11 @@
             android:label="NotificationsFollowing"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
         <activity
+            android:name=".NotificationsYouActivity"
+            android:exported="false"
+            android:label="NotificationsYou"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
             android:name=".AddStoryActivity"
             android:exported="false"
             android:label="Add Story"
@@ -171,8 +176,51 @@
             android:exported="false"
             android:label="Calling Ibrahim"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
-
-
+        <activity
+            android:name=".HighlightsActivity"
+            android:exported="false"
+            android:label="Hunza"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".FootsallActivity"
+            android:exported="false"
+            android:label="Ball"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".FriendsActivity"
+            android:exported="false"
+            android:label="Dost"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".IbbiProfileActivity"
+            android:exported="false"
+            android:label="Ibrahim's Profile"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiHighlights1Activity"
+            android:exported="false"
+            android:label="Kashmir"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiHighlights2Activity"
+            android:exported="false"
+            android:label="University"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiHighlights3Activity"
+            android:exported="false"
+            android:label="Football"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiHighlights4Activity"
+            android:exported="false"
+            android:label="Cars"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".UploadStoryActivity"
+            android:exported="false"
+            android:label="Upload Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 
 

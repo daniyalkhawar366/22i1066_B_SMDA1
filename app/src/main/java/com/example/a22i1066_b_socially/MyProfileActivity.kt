@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 
 class MyProfileActivity : AppCompatActivity() {
@@ -12,6 +13,10 @@ class MyProfileActivity : AppCompatActivity() {
     private lateinit var notificationsfollowing: ImageView
     private lateinit var homebutton: ImageView
     private lateinit var editprofile: Button
+    private lateinit var highlights: LinearLayout
+    private lateinit var footsall: LinearLayout
+    private lateinit var friends: LinearLayout
+    private lateinit var uploadstory: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile)
@@ -42,6 +47,30 @@ class MyProfileActivity : AppCompatActivity() {
         editprofile = findViewById(R.id.editprofile)
         editprofile.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        highlights = findViewById(R.id.highlights)
+        highlights.setOnClickListener {
+            val intent = Intent(this, HighlightsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        footsall = findViewById(R.id.footsall)
+        footsall.setOnClickListener {
+            val intent = Intent(this, FootsallActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        friends = findViewById(R.id.friends)
+        friends.setOnClickListener {
+            val intent = Intent(this, FriendsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        uploadstory = findViewById(R.id.uploadstory)
+        uploadstory.setOnClickListener {
+            val intent = Intent(this, UploadStoryActivity::class.java)
             startActivity(intent)
             finish()
         }

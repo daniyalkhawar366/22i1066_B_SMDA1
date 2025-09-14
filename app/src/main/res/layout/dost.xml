@@ -34,7 +34,7 @@
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_weight="1"
-            android:background="#707070"/>
+            android:background="#FFFFFF"/>
 
         <View
             android:id="@+id/progress3"
@@ -48,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="2dp"
             android:layout_weight="1"
-            android:background="#FFFFFF"/>
+            android:background="#707070"/>
 
         <View
             android:id="@+id/progress5"
@@ -87,14 +87,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hunza Trip "
+                android:text="Friends "
                 android:textColor="#FFFFFF"
                 android:textSize="14sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" May 17,2024"
+                android:text=" Feb 22, 2023"
                 android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
@@ -120,7 +120,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/roads"
+        android:src="@drawable/dost"
         app:layout_constraintTop_toBottomOf="@id/top_bar"
         app:layout_constraintBottom_toTopOf="@id/bottom_bar"
         app:layout_constraintStart_toStartOf="parent"

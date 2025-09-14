@@ -211,6 +211,7 @@
 
                     <!-- New -->
                     <LinearLayout
+                        android:id="@+id/uploadstory"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -236,6 +237,7 @@
 
                     <!-- Friends -->
                     <LinearLayout
+                        android:id="@+id/friends"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -261,6 +263,7 @@
 
                     <!-- Sport -->
                     <LinearLayout
+                        android:id="@+id/footsall"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -279,13 +282,14 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sports"
+                            android:text="Football"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
                     </LinearLayout>
 
                     <!-- Design -->
                     <LinearLayout
+                        android:id="@+id/highlights"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
@@ -295,7 +299,7 @@
                         <ImageView
                             android:layout_width="56dp"
                             android:layout_height="56dp"
-                            android:src="@drawable/design"
+                            android:src="@drawable/mountains2"
                             android:background="@drawable/circle_clip"
                             android:clipToOutline="true"
                             android:scaleType="centerCrop"
@@ -304,7 +308,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Design"
+                            android:text="Hunza"
                             android:textSize="12sp"
                             android:layout_marginTop="4dp" />
                     </LinearLayout>

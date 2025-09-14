@@ -18,6 +18,7 @@ class FYPActivity : AppCompatActivity() {
 
     private lateinit var viewAmmanStory: ImageView
     private lateinit var viewRafayStory: ImageView
+    private lateinit var ibbiprofile: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.foryou)
@@ -90,6 +91,12 @@ class FYPActivity : AppCompatActivity() {
         viewRafayStory = findViewById(R.id.rafaystory)
         viewRafayStory.setOnClickListener {
             val intent = Intent(this, rafayStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        ibbiprofile = findViewById(R.id.ibbiprofile)
+        ibbiprofile.setOnClickListener {
+            val intent = Intent(this, IbbiProfileActivity::class.java)
             startActivity(intent)
             finish()
         }

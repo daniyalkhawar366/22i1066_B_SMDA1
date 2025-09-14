@@ -2,19 +2,23 @@ package com.example.a22i1066_b_socially
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-class NotificationsFollowingActivity : AppCompatActivity() {
+class NotificationsYouActivity : AppCompatActivity() {
     private lateinit var explorepg: ImageView
     private lateinit var profile: ImageView
     private lateinit var post: ImageView
     private lateinit var homebutton: ImageView
-    private lateinit var notificationsyou: TextView
+    private lateinit var tabfollowing: TextView
+    private lateinit var rafaychat: Button
+    private lateinit var ibbiprofile: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.notifications_following)
+        setContentView(R.layout.notifications_you)
         explorepg = findViewById(R.id.explorepg)
         explorepg.setOnClickListener {
             val intent = Intent(this, ExplorePageActivity::class.java)
@@ -39,9 +43,21 @@ class NotificationsFollowingActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        notificationsyou = findViewById(R.id.notificationsyou)
-        notificationsyou.setOnClickListener {
-            val intent = Intent(this, NotificationsYouActivity::class.java)
+        tabfollowing = findViewById(R.id.tabFollowing)
+        tabfollowing.setOnClickListener {
+            val intent = Intent(this, NotificationsFollowingActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        rafaychat = findViewById(R.id.rafaychat)
+        rafaychat.setOnClickListener {
+            val intent = Intent(this, rafayChatActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        ibbiprofile = findViewById(R.id.ibbiprofile)
+        ibbiprofile.setOnClickListener {
+            val intent = Intent(this, IbbiProfileActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -293,6 +293,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+            android:id="@+id/ibbiprofile"
             android:layout_width="42dp"
             android:layout_height="42dp"
             android:src="@drawable/ibbi"
