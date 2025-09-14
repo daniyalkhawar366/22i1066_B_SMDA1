@@ -5,6 +5,7 @@ import android.text.InputType
 import android.util.Patterns
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class SignupActivity : AppCompatActivity() {
 
@@ -13,6 +14,7 @@ class SignupActivity : AppCompatActivity() {
     private lateinit var etPassword: EditText
     private lateinit var ivTogglePassword: ImageView
     private lateinit var btnCreateAccount: Button
+    private lateinit var ivBackArrow: ImageView // Added for back navigation
 
     private var isPasswordVisible = false
 
@@ -25,13 +27,13 @@ class SignupActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.etPassword)
         ivTogglePassword = findViewById(R.id.ivTogglePassword)
         btnCreateAccount = findViewById(R.id.btnCreateAccount)
+        ivBackArrow = findViewById(R.id.ivbackArrow) // Initialize back arrow
 
         // Toggle password visibility
         ivTogglePassword.setOnClickListener {
             if (isPasswordVisible) {
                 etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
                 etPassword.typeface = etPassword.typeface
-
             } else {
                 etPassword.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
             }
@@ -39,10 +41,20 @@ class SignupActivity : AppCompatActivity() {
             isPasswordVisible = !isPasswordVisible
         }
 
-        // Validate inputs on button click
+        // Navigate back to MainActivity on back arrow click
+        ivBackArrow.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish() // Close SignupActivity
+        }
+
+        // Validate inputs and navigate to MainActivity on button click
         btnCreateAccount.setOnClickListener {
             if (validateInputs()) {
-                Toast.makeText(this, "Account Created (Frontend Only)", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, ChooseAccountActivity::class.java)
+                startActivity(intent)
+                Toast.makeText(this, "Account Created", Toast.LENGTH_SHORT).show()
+                finish() // Close SignupActivity
             }
         }
     }

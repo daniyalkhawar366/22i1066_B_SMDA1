@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:padding="32dp"
     android:background="#FFFFFF"
-    tools:context=".YourActivity">
+    tools:context=".ChooseAccountActivity">
 
     <!-- Socially Title -->
     <TextView
@@ -68,28 +68,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvUsername" />
 
-    <!-- Switch Accounts -->
-    <TextView
-        android:id="@+id/tvSwitchAccounts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:fontFamily="sans-serif"
-        android:padding="12dp"
-        android:text="Switch accounts"
-        android:textColor="#8B5A5A"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
     <!-- Sign up Row -->
     <LinearLayout
         android:id="@+id/signUpRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="160dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,14 +88,14 @@
             android:textColor="#666666"
             android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/tvSignUp"
+        <Button
+            android:id="@+id/signup_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:fontFamily="sans-serif-medium"
             android:padding="4dp"
-            android:text="Sign up."
+            android:text="Sign up"
             android:textColor="#8B5A5A"
             android:textSize="14sp" />
     </LinearLayout>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Socially</string>
     <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
     <string name="activity1"><b>Ibbi</b> liked your post. 3m</string>
     <string name="activity2"><b>Rfy_196</b> liked your posts. 10m</string>
     <string name="activity3"><b>Rfy_196</b> started following you. 5h</string>

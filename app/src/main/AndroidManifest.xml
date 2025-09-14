@@ -25,12 +25,30 @@
         </intent-filter>
     </activity>
 
-    <activity
-        android:name=".SignupActivity"
-        android:exported="false"
-    android:label="@string/sign_up"
-    android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false"
+            android:label="@string/sign_up"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
 
-</application>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/login"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ChooseAccountActivity"
+            android:exported="false"
+            android:label="Choose Account"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".FYPActivity"
+            android:exported="false"
+            android:label="Choose Account"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+
+
+    </application>
 
     </manifest>
