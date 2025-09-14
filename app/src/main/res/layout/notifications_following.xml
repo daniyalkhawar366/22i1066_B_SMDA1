@@ -7,31 +7,10 @@
     android:layout_height="match_parent"
     android:padding="32dp"
     android:background="#FFFFFF"
-    tools:context=".notificationsyou">
+    tools:context=".notificationsfollowing">
 
     <!-- Your existing components -->
-    <ImageView
-        android:id="@+id/bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/time"
-        android:tint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/levels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
-        android:layout_marginEnd="-28dp"
-        android:src="@drawable/levels"
-        android:tint="#000000"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 
     <LinearLayout
         android:id="@+id/tabs"
@@ -73,7 +52,7 @@
         android:layout_height="0dp"
         android:padding="8dp"
         app:layout_constraintTop_toBottomOf="@id/tabs"
-        app:layout_constraintBottom_toTopOf="@id/indicator"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -286,39 +265,43 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@id/indicator"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+            android:id="@+id/homebtn"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/icon"
-            android:tint="#000000"
-            android:layout_marginHorizontal="16dp"/>
-
-        <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/shape"
-            android:tint="#000000"
-            android:layout_marginHorizontal="16dp"/>
-
-        <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/plusbox"
-            android:tint="#000000"
-            android:layout_marginHorizontal="16dp"/>
-
-        <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:src="@drawable/like"
             android:tint="#8B5A5A"
             android:layout_marginHorizontal="16dp"/>
 
         <ImageView
+            android:id="@+id/explorepg"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/shape"
+            android:tint="#8B5A5A"
+            android:layout_marginHorizontal="16dp"/>
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/plusbox"
+            android:tint="#8B5A5A"
+            android:layout_marginHorizontal="16dp"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/likeempty"
+            android:tint="#8B5A5A"
+            android:layout_marginHorizontal="16dp"/>
+
+        <ImageView
+            android:id="@+id/profile"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/profile_pic"
@@ -328,16 +311,6 @@
             android:clipToOutline="true"/>
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/indicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="-2dp"
-        android:src="@drawable/homeindicator"
-        android:tint="#8B5A5A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

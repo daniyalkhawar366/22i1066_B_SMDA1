@@ -109,6 +109,7 @@
 
         <!-- Close Icon -->
         <ImageView
+            android:id="@+id/homebtn"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/close"
