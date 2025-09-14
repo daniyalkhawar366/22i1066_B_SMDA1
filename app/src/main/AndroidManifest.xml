@@ -44,7 +44,12 @@
         <activity
             android:name=".FYPActivity"
             android:exported="false"
-            android:label="Choose Account"
+            android:label="FYP"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ExplorePageActivity"
+            android:exported="false"
+            android:label="Explore"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 

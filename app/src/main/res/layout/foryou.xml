@@ -520,6 +520,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
+            android:id="@+id/explorepg"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/shape"
