@@ -174,20 +174,15 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/amman"
-                    android:background="@drawable/circle_border"
-                    android:padding="4dp"/>
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
                     android:src="@drawable/rfy"
                     android:background="@drawable/circle_border"
+                    android:clipToOutline="true"
                     android:padding="4dp"/>
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
                     android:src="@drawable/sam"
+                    android:clipToOutline="true"
                     android:background="@drawable/circle_border"
                     android:padding="4dp"/>
             </LinearLayout>
@@ -287,7 +282,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mre"
+                android:text="More"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"/>
         </LinearLayout>

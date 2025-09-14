@@ -94,6 +94,7 @@
 
                 <!-- Circular image with white border -->
                 <ImageView
+                    android:id="@+id/mystory"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -135,6 +136,7 @@
                     android:layout_gravity="center" />
 
                 <ImageView
+                    android:id="@+id/ammanstory"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -174,6 +176,7 @@
                     android:layout_gravity="center" />
 
                 <ImageView
+                    android:id="@+id/bilalstory"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -213,6 +216,7 @@
                     android:layout_gravity="center" />
 
                 <ImageView
+                    android:id="@+id/rafaystory"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"
@@ -251,6 +255,7 @@
                     android:layout_gravity="center" />
 
                 <ImageView
+                    android:id="@+id/ibbistory"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_gravity="center"

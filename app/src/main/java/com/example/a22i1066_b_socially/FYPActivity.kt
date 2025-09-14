@@ -12,7 +12,12 @@ class FYPActivity : AppCompatActivity() {
     private lateinit var post: ImageView
     private lateinit var notificationsfollowing: ImageView
     private lateinit var addStory: ImageView
+    private lateinit var viewmystory: ImageView
+    private lateinit var viewBilalStory: ImageView
+    private lateinit var viewIbbiStory: ImageView
 
+    private lateinit var viewAmmanStory: ImageView
+    private lateinit var viewRafayStory: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.foryou)
@@ -49,6 +54,42 @@ class FYPActivity : AppCompatActivity() {
         addStory = findViewById(R.id.addstory)
         addStory.setOnClickListener {
             val intent = Intent(this, AddStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewmystory = findViewById(R.id.mystory)
+        viewmystory.setOnClickListener {
+            val intent = Intent(this, MyStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewBilalStory = findViewById(R.id.bilalstory)
+        viewBilalStory.setOnClickListener {
+            val intent = Intent(this, BilalStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewIbbiStory = findViewById(R.id.ibbistory)
+        viewIbbiStory.setOnClickListener {
+            val intent = Intent(this, ibbiStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewAmmanStory = findViewById(R.id.ammanstory)
+        viewAmmanStory.setOnClickListener {
+            val intent = Intent(this, ammanStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewAmmanStory = findViewById(R.id.ammanstory)
+        viewAmmanStory.setOnClickListener {
+            val intent = Intent(this, ammanStoryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewRafayStory = findViewById(R.id.rafaystory)
+        viewRafayStory.setOnClickListener {
+            val intent = Intent(this, rafayStoryActivity::class.java)
             startActivity(intent)
             finish()
         }

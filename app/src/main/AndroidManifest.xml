@@ -76,6 +76,31 @@
             android:exported="false"
             android:label="Add Story"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".MyStoryActivity"
+            android:exported="false"
+            android:label="View MyStory"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".BilalStoryActivity"
+            android:exported="false"
+            android:label="View Bilals Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ibbiStoryActivity"
+            android:exported="false"
+            android:label="View Ibrahims Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ammanStoryActivity"
+            android:exported="false"
+            android:label="View Ammans Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".rafayStoryActivity"
+            android:exported="false"
+            android:label="View Ammans Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 
 
