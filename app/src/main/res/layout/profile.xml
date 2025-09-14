@@ -433,7 +433,7 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/icon"
-            android:tint="#000000"
+            android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
@@ -447,7 +447,7 @@
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/plusbox"
-            android:tint="#000000"
+            android:tint="#8B5A5A"
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView

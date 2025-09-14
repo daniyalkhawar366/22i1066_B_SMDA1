@@ -22,6 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+            android:id="@+id/addstory"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@android:drawable/ic_menu_camera"/>
@@ -44,6 +45,7 @@
             android:layout_marginEnd="16dp"/>
 
         <ImageView
+            android:id="@+id/chats"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/send"
@@ -528,6 +530,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
+            android:id="@+id/post"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/plusbox"
@@ -535,6 +538,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
+            android:id="@+id/notificationsfollowing"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/like"
@@ -542,6 +546,7 @@
             android:layout_marginHorizontal="20dp"/>
 
         <ImageView
+            android:id="@+id/profile"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/profile_pic"

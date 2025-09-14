@@ -51,6 +51,31 @@
             android:exported="false"
             android:label="Explore"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:label="Chats"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".MyProfileActivity"
+            android:exported="false"
+            android:label="MyProfile"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".MakePostActivity"
+            android:exported="false"
+            android:label="MakePost"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".NotificationsFollowingActivity"
+            android:exported="false"
+            android:label="NotificationsFollowing"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity
+            android:name=".AddStoryActivity"
+            android:exported="false"
+            android:label="Add Story"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 
 
 
